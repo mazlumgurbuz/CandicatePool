@@ -26,4 +26,5 @@ public class CandidateResponse {
     private List<ExperienceResponse> experience;
     private List<EducationResponse> education;
     private List<LanguageResponse> foreingLanguages;
+    private CvFile data;
 }
