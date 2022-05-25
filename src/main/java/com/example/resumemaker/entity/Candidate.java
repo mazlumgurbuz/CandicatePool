@@ -14,7 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Candicate {
+public class Candidate {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

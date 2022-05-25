@@ -1,4 +1,4 @@
-package com.example.resumemaker.dto.response;
+package com.example.resumemaker.dto.request;
 
 import com.example.resumemaker.entity.*;
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -12,8 +12,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CandicateResponse {
-
+public class CandidateRequest {
     private Long id;
     private String name;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
@@ -23,8 +22,7 @@ public class CandicateResponse {
     private String email;
     private String abilities;
     private LatestEducationState latestEducationState = LatestEducationState.PASIVE;
-    private List<ExperienceResponse> experience;
-    private List<EducationResponse> education;
-    private List<LanguageResponse> foreingLanguages;
-    private CvFile data;
+    private List<ExperienceRequest> experience;
+    private List<EducationRequest> education;
+    private List<LanguageRequest> foreingLanguages;
 }
